@@ -4,7 +4,7 @@ Este é o repositório do meu portfólio pessoal, desenvolvido para apresentar m
 
 ![Captura de tela do Portfólio](URL_DA_SUA_IMAGEM_AQUI)
 
-### 🔗 **[Acesse o site ao vivo AQUI](https://joaomangini.github.io/Portfolio/)**
+### 🔗 **[Acesse o site ao vivo AQUI](https://joaomangini.github.io/Portifolio/)**
 
 ---
 
