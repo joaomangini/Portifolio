@@ -1,91 +1,134 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfólio — João Leonardo</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>João Leonardo — Currículo & Portfólio</title>
 
-  <meta name="description" content="Portfólio de João Leonardo — Desenvolvedor Front-End especializado em JavaScript, Python e SQL. Experiência em TI hospitalar e automação de sistemas.">
-  <meta property="og:title" content="Portfólio — João Leonardo">
+  <meta name="description" content="Currículo e Portfólio de João Leonardo — Desenvolvedor Front-End e Profissional de TI Hospitalar.">
+  <meta property="og:title" content="João Leonardo — Desenvolvedor Front-End">
   <meta property="og:description" content="Desenvolvedor Front-End | Python | JavaScript | SQL">
+  <meta property="og:image" content="profile.jpeg">
   <meta name="theme-color" content="#0f1724">
 
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
-
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
   <canvas id="matrix-bg"></canvas>
 
   <header>
     <nav>
       <h1 class="logo">João Leonardo</h1>
-      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu">☰</button>
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">☰</button>
       <ul id="menu">
         <li><a href="#inicio">Início</a></li>
         <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#resumo">Resumo</a></li>
+        <li><a href="#curriculo">Currículo</a></li>
         <li><a href="#projetos">Projetos</a></li>
         <li><a href="#contato">Contato</a></li>
+        <li><button id="themeToggle" class="btn secondary small" title="Alternar tema">🌙</button></li>
       </ul>
     </nav>
   </header>
 
-  <section id="inicio" class="hero">
-    <div class="hero-content">
-      <h2 id="typing"></h2>
-      <p>Desenvolvedor Front-End | Python | JavaScript | SQL</p>
-      <a href="#projetos" class="btn">Ver Projetos</a>
-    </div>
-  </section>
-
-  <section id="sobre" data-aos="fade-up">
-    <h2>Sobre Mim</h2>
-    <p>Sou Técnico de Informática e profissional de TI hospitalar com experiência em automação e desenvolvimento de soluções.
-      Tenho formação em Ciência de Dados e especialização em Python, JavaScript e SQL.
-      Atualmente, foco em desenvolver aplicações web modernas e intuitivas.</p>
-
-    <div class="skills">
-      <div class="bar">
-        <span style="width: 90%;" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">HTML/CSS 90%</span>
+  <main>
+    <section id="inicio" class="hero">
+      <div class="hero-content" data-aos="fade-up">
+        <img src="profile.jpeg" alt="Foto de João Leonardo" class="profile-pic" />
+        <h2 id="typing">👋 Olá — Eu sou o João Leonardo</h2>
+        <p>Desenvolvedor Front-End | Python | JavaScript | SQL</p>
+        <div class="btn-group">
+          <a href="#projetos" class="btn">Ver Projetos</a>
+          <button id="baixarCurriculo" class="btn secondary">📄 Baixar Currículo</button>
+        </div>
       </div>
-      <div class="bar">
-        <span style="width: 85%;" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">JavaScript 85%</span>
-      </div>
-      <div class="bar">
-        <span style="width: 80%;" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">Python 80%</span>
-      </div>
-      <div class="bar">
-        <span style="width: 70%;" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">SQL 70%</span>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="projetos" data-aos="fade-up">
-    <h2>Projetos Recentes</h2>
-    <p>Estes são meus repositórios públicos mais recentes do GitHub:</p>
-    <div id="projectsGrid" class="projects-grid">
-      <div id="loader" class="loader"></div>
-    </div>
-  </section>
+    <section id="sobre" data-aos="fade-up">
+      <h2>Sobre Mim</h2>
+      <p>
+        Com mais de 11 anos de experiência prática em infraestrutura de TI, servidores e redes em,
+        ambiente complexos como o Exército Brasileiro e o setor Hospitalar, hoje eu direciono minha
+        carreira para o desenvolvimento de software. Minha base sólida em suporte e automação de processos,
+        combinada com meus estudos em Gestão da TI (Uinter) e habilidades em JavaScript, Python e SQL, permite-me 
+        construir e gerenciar soluções de tecnologia eficientes e robustas.
+      </p>
+    </section>
 
-  <section id="contato" data-aos="fade-up">
-    <h2>Contato</h2>
-    <p>Quer conversar sobre um projeto ou uma oportunidade?</p>
-    <div class="contact-links">
-      <a href="mailto:JLmangini@hotmail.com"><i class="fa-solid fa-envelope"></i> E-mail</a>
-      <a href="https://www.linkedin.com/in/joao-leonardo-948392207/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
-      <a href="https://github.com/joaomangini" target="_blank"><i class="fab fa-github"></i> GitHub</a>
-    </div>
-  </section>
+<section id="resumo" data-aos="fade-up">
+      <h2>Resumo Profissional</h2>
+      <ul class="resumo-lista">
+        <li>💼 +11 anos de experiência em infraestrutura, redes e servidores</li>
+        <li>🏥 Vivência em ambientes de alta criticidade (Militar e Hospitalar)</li>
+        <li>💻 Foco em Desenvolvimento Front-End (JS, Python) e Automação</li>
+        <li>🎓 Cursando Gestão da TI para liderar projetos e inovar</li>
+      </ul>
+    </section>
+
+    <section id="curriculo" data-aos="fade-up">
+      <h2>Currículo</h2>
+      <div class="timeline">
+        <div class="item">
+          <h3>Técnico de Informática — Exército Brasileiro</h3>
+          <span>03/2015 — 03/2023</span>
+          <p>Manutenção de computadores, servidores e redes estruturadas. Responsável por backups, infraestrutura e atualização de páginas web.</p>
+        </div>
+        <div class="item">
+          <h3>Técnico de Informática — Hospital Regional</h3>
+          <span>2024 — Atual</span>
+          <p>Responsável pelo suporte técnico, automação de processos e manutenção da infraestrutura de TI hospitalar.</p>
+        </div>
+        <div class="item">
+          <h3>Educação</h3>
+          <ul>
+            <li><strong>TECNOLOGIA EM GESTÃO DA TECNOLOGIA DA INFORMAÇÃO</strong> — Uninter (Cursando, 2025)</li>
+            <li><strong>Técnico em Informática</strong> — Escola Estadual Ade Marques (Pronatec 2014)</li>
+          </ul>
+        </div>
+        <div class="item">
+          <h3>Cursos e Certificações</h3>
+          <ul>
+            <li><strong>JavaScript</strong> — EBAC (2025, 12h)</li>
+            <li><strong>Inteligência Artificial</strong> — EBAC (2025, 25h)</li>
+            <li><strong>Python Avançado</strong> — Mentorama</li>
+            <li><strong>MySQL</strong> — Mentorama</li>
+            <li><strong>Lógica de Programação</strong> — SENAI</li>
+            <li><strong>Auxiliar Administrarivo - SENAC (2019)</strong></li>
+            <li><strong>Técnico de Informática</strong> Pronatc (2014)</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="projetos" data-aos="fade-up">
+      <h2>Projetos Recentes</h2>
+      <p>Estes são meus repositórios públicos mais recentes do GitHub:</p>
+      <div id="projectsGrid" class="projects-grid"><div id="loader" class="loader"></div></div>
+    </section>
+
+    <section id="contato" data-aos="fade-up">
+      <h2>Contato</h2>
+      <p>Quer conversar sobre um projeto ou uma oportunidade?</p>
+      <div class="contact-links">
+        <a href="mailto:JLmangini@hotmail.com"><i class="fa-solid fa-envelope"></i> E-mail</a>
+        <a href="https://www.linkedin.com/in/joao-leonardo-948392207/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+        <a href="https://github.com/joaomangini" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+      </div>
+    </section>
+  </main>
 
   <button id="backToTop" class="back-top" title="Voltar ao topo">↑</button>
 
   <footer>
-    <p>© 2025 João Leonardo — Desenvolvedor Front-End</p>
+    <p>© 2025 João Leonardo — Desenvolvedor Front-End | <span id="visitas"></span></p>
   </footer>
 
   <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-  <script src="matrix-background.js"></script> <script src="script.js"></script> </body>
+  <script src="script.js"></script>
+</body>
 </html>
